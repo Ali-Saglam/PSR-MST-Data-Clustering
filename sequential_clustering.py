@@ -169,7 +169,7 @@ def S_MST_segmentation(psr, mst, l, c):
         if maxin1 < first:
             max1 = psr[first][0]
             maxin1 = first
-            for j in range(first + 1, last):
+            for j in range(first + 1, last + 1):
                 if psr[j][0] > max1:
                     max1 = psr[j][0]
                     maxin1 = j
@@ -185,7 +185,7 @@ def S_MST_segmentation(psr, mst, l, c):
         if maxin2 < first:
             max2 = psr[first][0]
             maxin2 = first
-            for j in range(first + 1, last):
+            for j in range(first + 1, last + 1):
                 if psr[j][0] > max2:
                     max2 = psr[j][0]
                     maxin2 = j
